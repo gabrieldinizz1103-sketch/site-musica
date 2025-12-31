@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: #121212;
+  color: #fff;
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+  background: #1db954;
+  color: #000;
+}
+
+.lista-musicas {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.item-musica {
+  display: flex;
+  align-items: center;
+  gap: 10px;              /* espaço pequeno entre ☰ e nome */
+  background: #1f1f1f;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+
+.musica {
+  text-decoration: none;
+  color: #fff;
+}
+
+.controles button {
+  cursor: pointer;
+  border: none;
+  background: #1db954;
+  color: #000;
+  padding: 6px 10px;
+  margin-left: 5px;
+  border-radius: 5px;
+}
+
+.controles button:hover {
+  opacity: 0.8;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background: #1f1f1f;
+  font-size: 14px;
+}
+
+.drag-handle {
+  cursor: grab;
+  font-size: 22px;
+  user-select: none;
+}
+
+.drag-handle:active {
+  cursor: grabbing;
+}
